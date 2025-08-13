@@ -4,20 +4,55 @@
   box-sizing: border-box;
 }
 
+:root {
+  --tinggi-navigasi: 220px; /* Tambahkan sedikit dari 207.984px untuk antisipasi margin/border */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--tinggi-navigasi);
+  background-color: #fff;
+  z-index: 1000;
+  box-sizing: border-box; /* Pastikan padding & border dihitung */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opsional: bayangan */
+  padding: 10px 20px; /* Sesuaikan jika ada isi */
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding-top: var(--tinggi-navigasi);
+  margin: 0;
+  transition: padding-top 0.3s ease;
+}
+
+.content {
+    /* Tambahkan margin di bagian atas */
+  margin-top: 15px; /* Sesuaikan nilai ini sesuai kebutuhan */
 }
 
 /* Header & Navigation */
 header {
-  background-color: #f5f5f5;
-  color: #333;
-  padding: 20px;
-  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--tinggi-navigasi); /* Menggunakan variable */
+  background-color: #ffffff;
+  z-index: 1000;  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff; /* Tambahkan warna latar belakang agar konten di bawahnya tidak terlihat */
+  z-index: 1000; /* Pastikan navigasi berada di atas konten lain */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Opsional: Tambahkan bayangan untuk efek */
+  padding: 10px 0;
 }
 
 nav {
