@@ -37,21 +37,15 @@ body {
   margin-top: 15px; /* Sesuaikan nilai ini sesuai kebutuhan */
 }
 
-/* Header & Navigation */
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: var(--tinggi-navigasi); /* Menggunakan variable */
-  background-color: #ffffff;
-  z-index: 1000;  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #ffffff; /* Tambahkan warna latar belakang agar konten di bawahnya tidak terlihat */
+  background-color: #ffffff; /* Warna latar belakang agar konten di bawahnya tidak terlihat */
   z-index: 1000; /* Pastikan navigasi berada di atas konten lain */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Opsional: Tambahkan bayangan untuk efek */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan untuk efek */
   padding: 10px 0;
 }
 
@@ -229,10 +223,22 @@ footer {
   }
 }
 
+/* Responsive layout untuk layar kecil */
 @media screen and (max-width: 600px) {
   .card {
     padding: 10px;
     font-size: 14px;
+  }
+
+  .caption {
+    margin-bottom: 16px;
+  }
+}
+
+/* Layout untuk layar besar */
+@media screen and (min-width: 601px) {
+  .caption {
+    margin-bottom: 24px;
   }
 }
 
@@ -262,7 +268,9 @@ footer {
   font-weight: 500;
   text-align: center;
   margin-top: 12px;
-  color: #007b83;
+  margin-bottom: 20px; /* Atau 24px jika ingin lebih lega */
+  font-style: italic; /* Opsional: memberi nuansa caption */
+  color: #555; /* Opsional: warna lebih lembut */
 }
 
 .subsection {
