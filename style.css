@@ -258,6 +258,9 @@ footer {
   body {
     padding-top: var(--tinggi-navigasi);
   }
+  html {
+  scroll-padding-top: var(--tinggi-nav);
+  }
 }
 
 /* Layout untuk layar besar */
@@ -418,6 +421,7 @@ ul.fakta-singkat {
   color: #333; /* Bisa diganti warna sesuai tema */
   font-size: 1.2em;
 }
+
 
 
 
