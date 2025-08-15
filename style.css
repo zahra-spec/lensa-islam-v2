@@ -249,7 +249,7 @@ footer {
     margin-bottom: 20px;
   }
    :root {
-    --tinggi-navigasi: 220px;
+    --tinggi-navigasi: 210px;
   }
 
   body {
@@ -415,6 +415,7 @@ ul.fakta-singkat {
   color: #333; /* Bisa diganti warna sesuai tema */
   font-size: 1.2em;
 }
+
 
 
 
