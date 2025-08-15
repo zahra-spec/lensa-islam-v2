@@ -176,6 +176,7 @@ figcaption {
   color: white;
   padding-top: var(--tinggi-navigasi);
   scroll-margin-top: var(--tinggi-navigasi);
+  position: relative;
 }
 
 /* Footer */
@@ -417,6 +418,7 @@ ul.fakta-singkat {
   color: #333; /* Bisa diganti warna sesuai tema */
   font-size: 1.2em;
 }
+
 
 
 
