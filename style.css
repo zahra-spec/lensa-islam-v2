@@ -233,6 +233,13 @@ footer {
   .caption {
     margin-bottom: 16px;
   }
+   :root {
+    --tinggi-navigasi: 180px;
+  }
+
+  body {
+    padding-top: var(--tinggi-navigasi);
+  }
 }
 
 /* Layout untuk layar besar */
@@ -393,5 +400,6 @@ ul.fakta-singkat {
   color: #333; /* Bisa diganti warna sesuai tema */
   font-size: 1.2em;
 }
+
 
 
