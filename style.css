@@ -225,13 +225,23 @@ footer {
 
 /* Responsive layout untuk layar kecil */
 @media screen and (max-width: 600px) {
-  .card {
-    padding: 10px;
-    font-size: 14px;
+  main {
+    flex-direction: column;
+    padding: 1rem;
   }
-
+  nav ul {
+    flex-direction: row; /* Tetap horizontal seperti desktop */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .card {
+    padding: 16px;
+    font-size: 15px;
+  }
   .caption {
-    margin-bottom: 16px;
+    font-size: 18px;
+    margin-bottom: 20px;
   }
    :root {
     --tinggi-navigasi: 220px;
@@ -400,6 +410,7 @@ ul.fakta-singkat {
   color: #333; /* Bisa diganti warna sesuai tema */
   font-size: 1.2em;
 }
+
 
 
 
