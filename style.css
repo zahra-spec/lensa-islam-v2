@@ -1,3 +1,6 @@
+html {
+  scroll-padding-top: var(--tinggi-navigasi);
+}
 * {
   margin: 0;
   padding: 0;
@@ -162,6 +165,7 @@ figcaption {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   padding: 20px;
+  scroll-margin-top: var(--tinggi-navigasi);
 }
 
 .jumbotron {
@@ -410,6 +414,7 @@ ul.fakta-singkat {
   color: #333; /* Bisa diganti warna sesuai tema */
   font-size: 1.2em;
 }
+
 
 
 
